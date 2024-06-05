@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Creating a Simple Form
+        </title>
+        <link rel="stylesheet" href="./linked.css" />
+    </head>
+    <body>
+        <h1 style="color: blue;">Creating a Simple Form Using HTML</h1>
+        <p>This form includes various input elements such as: <b>radio button, select, text field, checkboxes</b> etc 
+            that you can use to create a simple form. Also the <em>hidden field</em> that is only visible to the backend where the inputs by the user is collected.</p>
+        <h3>Introduce yourself</h3><br>
+        Please fill all fields
+
+        <!-- Comprehensive form for user input -->
+    <form action="/submit-form" method="post">
+        <!-- Input field for name -->
+        <label for="name" class="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <!-- Input field for email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <!-- Dropdown for gender selection -->
+        <label for="gender" >Gender:</label>
+        <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        </select><br><br>
+        
+        <!-- Checkbox for interests -->
+        <label>Interests:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label><br>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label><br>
+        
+        <!-- Radio buttons for preferred language -->
+        <label>Preferred Language:</label>
+        <input type="radio" id="english" name="language" value="english">
+        <label for="english">English</label>
+        <input type="radio" id="french" name="language" value="french">
+        <label for="french">French</label>
+        <input type="radio" id="other" name="language" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="message">Do you have anything else to add? If yes, enter your text below:</label><br><br>
+        <textarea id="message" name="message" rows="3" cols="80" placeholder="Enter your message here"></textarea><br><br>
+        
+        <!-- Hidden field to pass additional data -->
+        <input type="hidden" id="source" name="source" value="website">
+        
+        <!-- Submit button -->
+        <input type="submit" value="Submit" style="background-color: blue; color: beige;">
+  </form>
+  
+    </body>
+</html>

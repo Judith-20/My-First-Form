@@ -1,0 +1,23 @@
+body {
+    background-image: url('../Images/img1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/* when filling the name field the colour changes to blue */
+#name{
+    color: blue;
+}
+
+.name{
+    color: darkblue;
+}
+
+#message{
+    background-color: aqua;
+    color: black;
+}
+
+/* when filling the email field the colour changes to blue */
+#email{
+    color: crimson;
+}
